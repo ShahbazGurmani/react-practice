@@ -4,8 +4,6 @@ import './App.css';
 import  './User';
 import Student from './Student';
 import Profile from './Profile';
-import Login from './Login';
-
 
 function App() {
 
@@ -75,8 +73,7 @@ function App() {
           <input type='checkbox' onChange={(e)=>{setTnc(e.target.checked)}} /><span>Accept terms and conditions</span><br/> <br/>
           <button type='submit'>Submit</button>
        </form> */}
-      {/* <Profile/> */}
-      <Login/>
+      <Profile/>
 
     </div>
     

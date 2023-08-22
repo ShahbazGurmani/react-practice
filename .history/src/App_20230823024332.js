@@ -3,9 +3,6 @@ import React ,{useState} from 'react';
 import './App.css';
 import  './User';
 import Student from './Student';
-import Profile from './Profile';
-import Login from './Login';
-
 
 function App() {
 
@@ -25,17 +22,16 @@ function App() {
   //   console.log(val.target.value);
   //   setValue(val.target.value);
   // }
-//form data submit work onit:..............................................................................
-  // const [name,setName] = useState("");
-  // const [interest,setInterest] = useState("");
-  // const [tnc,setTnc] = useState(false);
+//form data submit work onit:
+  const [name,setName] = useState("");
+  const [interest,setInterest] = useState("");
+  const [tnc,setTnc] = useState(false);
   
 
-  // function getFormData(event)
-  // {
-  //     console.warn(name,interest,tnc);
-  //     event.preventDefault();
-  // }
+  function getFormData(event)
+  {
+      event.preventDefault();
+  }
 
   
   return (
@@ -64,7 +60,7 @@ function App() {
       {/* <button onClick={setStatus(false)}>Hide</button>
       <button onClick={setStatus(true)}>Show</button> */}
 
-      {/* <h1>Handle from in react</h1>
+      <h1>Handle from in react</h1>
        <form onSubmit={getFormData}> 
           <input type='text' placeholder='enter your name:' onChange={(e)=>{setName(e.target.value)}}/><br/> <br/>
           <select onChange={(e)=>{setInterest(e.target.value)}}>
@@ -74,9 +70,8 @@ function App() {
           </select><br/> <br/>
           <input type='checkbox' onChange={(e)=>{setTnc(e.target.checked)}} /><span>Accept terms and conditions</span><br/> <br/>
           <button type='submit'>Submit</button>
-       </form> */}
-      {/* <Profile/> */}
-      <Login/>
+       </form>
+
 
     </div>
     
